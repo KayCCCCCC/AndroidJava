@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    >
+    <ImageView
+        android:id="@+id/imageDevice"
+        android:layout_width="113dp"
+        android:layout_height="127dp"
+        app:layout_constraintEnd_toStartOf="@+id/titleDevice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titleDevice"
+        android:layout_width="170dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="17dp"
+        android:text="title"
+        app:layout_constraintEnd_toStartOf="@+id/typeDevice"
+        app:layout_constraintStart_toEndOf="@+id/imageDevice"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/typeDevice"
+        android:layout_width="77dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="32dp"
+        android:text="type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleDevice"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descDevice"
+        android:layout_width="169dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="15dp"
+        android:text="description"
+        app:layout_constraintEnd_toStartOf="@+id/typeDevice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageDevice"
+        app:layout_constraintTop_toBottomOf="@+id/titleDevice" />
+
+    <ImageView
+        android:id="@+id/menuOptions"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="4dp"
+        android:src="@drawable/dots_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
